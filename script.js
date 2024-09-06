@@ -1,7 +1,7 @@
 function startGame(e) {
 	e.preventDefault()
-	const p1name = document.getElementById("player-1").value;
-	const p2name = document.getElementById("player-2").value;
+	const p1name = document.getElementById("player1").value;
+	const p2name = document.getElementById("player2").value;
 	const container = document.getElementsByClassName("container")[0];
 	const inputs = document.getElementsByClassName("inputs")[0];
 
