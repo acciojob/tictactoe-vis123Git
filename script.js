@@ -11,7 +11,8 @@ function startGame(e) {
 		inputs.remove();
 		let turn = p1name;
 		const game = document.createElement("div");
-		const user_turn = document.createElement("h1");
+		const user_turn = document.createElement("div");
+			user_turn.className = "message"
 
 		game.className = "game";
 
@@ -28,18 +29,13 @@ function startGame(e) {
 					box.innerText = "O";
 					turn = p1name;
 					user_turn.innerText = `${turn}, you're up`;
-
 				}
 			})
 			game.append(box);
 		}
 		user_turn.innerText = `Click to start the game!`;
 		container.append(user_turn);
-
-			container.append(game);
-		
-
-		
+		container.append(game);
 	}
 
 }
