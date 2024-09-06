@@ -13,6 +13,7 @@ function startGame(e) {
 		const game = document.createElement("div");
 		const user_turn = document.createElement("div");
 			user_turn.className = "message"
+			user_turn.innerText = `${turn}, you're up`;
 
 		game.className = "game";
 
@@ -33,7 +34,6 @@ function startGame(e) {
 			})
 			game.append(box);
 		}
-		user_turn.innerText = `Click to start the game!`;
 		container.append(user_turn);
 		container.append(game);
 	}
