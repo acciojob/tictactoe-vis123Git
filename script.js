@@ -23,8 +23,8 @@ function startGame(e) {
                 box.addEventListener("click", function (event) {
                     if (this.innerText === "") {  // Only allow moves on empty cells
                         if (turn === p1name) {
-                            this.innerText = "X";
-                            const result = checkWinner(p1name, "X");
+                            this.innerText = "x";
+                            const result = checkWinner(p1name, "x");
                             if (result) {
                                 user_turn.innerText = result;
                                 disableAllCells();
@@ -33,8 +33,8 @@ function startGame(e) {
                                 user_turn.innerText = `${turn}, you're up`;
                             }
                         } else {
-                            this.innerText = "O";
-                            const result = checkWinner(p2name, "O");
+                            this.innerText = "o";
+                            const result = checkWinner(p2name, "o");
                             if (result) {
                                 user_turn.innerText = result;
                                 disableAllCells();
