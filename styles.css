@@ -1,1 +1,30 @@
-/*  your css code here. If applicable */
+.container{
+	border : 1px solid green;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:5px;
+	
+}
+
+.box{
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	background-color : #FFC0CB;
+	width : 100px;
+	height : 100px;
+	cursor:pointer;
+	border:1px solid black;
+	font-size:40px;	
+}
+
+
+.game{
+	border:1px solid black;
+	display:grid;
+	grid-template-columns : repeat(3, 100px);
+	grid-template-rows:repeat(3, 100px);
+
+}
