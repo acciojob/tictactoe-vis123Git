@@ -19,7 +19,7 @@ function startGame(e) {
 		for (let i = 1; i < 10; i++) {
 			const box = document.createElement("div")
 			box.id = i;
-			box.className = "box"
+			box.className = "box";
 			box.addEventListener("click", function (event) {
 				if (turn == p1name) {
 					box.innerText = "X";
@@ -37,5 +37,9 @@ function startGame(e) {
 		container.append(user_turn);
 		container.append(game);
 	}
+}
+
+function checkWinner(user) {
+		const cells = document.getElementsByClassName("box");
 
 }
